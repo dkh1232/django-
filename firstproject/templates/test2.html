@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>num</title>
+</head>
+<body>
+    <ul>
+            {% for num1 in numlist %}
+            <li>{{ num1 }}</li>
+            {% endfor %}
+    </ul>
+<p>
+    {% if num >= 80 and num <= 100 %}优秀
+    {% elif num >= 60 and num <=  80 %}良好
+    {% elif num >= 0 and num <=  59 %}不及格
+    {% endif %}
+</p>
+</body>
+</html>
